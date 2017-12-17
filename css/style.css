@@ -84,7 +84,7 @@
     margin: 8px 10px;
     width: 110px;
     text-align: center;
-    background-color: rgb(255, 133, 51);
+/*    background-color: rgb(255, 133, 51);*/
 	font-weight:bold;
 	}
 	 .nav_links li a{
@@ -93,9 +93,9 @@
     margin: 0;
 	}
 	.nav_links .active{
-	background-color: rgb(255, 204, 179);
+/*	background-color: rgb(255, 204, 179);*/
 	}
 	.nav_links .active > a{
-	color: #000 !important;
+	color: rgb(255, 133, 51) !important;
 	background-color: transparent !important;
 }
