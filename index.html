@@ -15,7 +15,7 @@
     $(function(){
       $("#headerInclude").load("header.html");
     });
-  </script> -->
+  </script>-->
 </head>
 <body>
 <div class="main_page">
@@ -42,10 +42,10 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 				  <ul class="nav navbar-nav nav_links">
-					<li class=""><a href="#">Home</a></li>
-                    <li class="active"><a href="#">Students</a></li>
+					<li class=""><a href="index.html">Home</a></li>
+                    <li class=""><a href="home.html">Students</a></li>
 					<li class="dropdown">
-					  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects <span class="caret"></span></a>
+					  <a class="dropdown-toggle" data-toggle="dropdown" href="">Projects <span class="caret"></span></a>
 					  <ul class="dropdown-menu menu_drop">
 						<li><a href="#">Page 1-1</a></li>
 						<li><a href="#">Page 1-2</a></li>
@@ -69,12 +69,12 @@
 </section>
 </header>
 
-<section><div style="height:80px; width:100%; margin-bottom: 15px;"></div></section>
 
+<section><div style="height:80px; width:100%; margin-bottom: 15px;"></div></section>
 
 <div>
 
-<section class="inner" data-aos="slide-up">
+<section class="inner">
   <div class='row'>
 	   <div class="col-sm-2"></div>
 	   <div class="col-sm-20 col-xs-24">
@@ -489,6 +489,9 @@ AOS.init({
   duration: 1200,
 });
 
+$('.nav_links li').click(function(e) {
+    		    $(this).addClass('active').siblings().removeClass('active');
+    		});
 </script>
 
 </body>
