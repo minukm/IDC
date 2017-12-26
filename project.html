@@ -11,12 +11,7 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/project.css" rel="stylesheet">
   <link href="css/mobile_css.css" rel="stylesheet">
-   <script>
- 
-    $(function(){
-      $("#headerInclude").load("header.html");
-    });
-  </script>
+
 
 </head>
 
@@ -117,11 +112,19 @@
 </div>
 </div>
 <script>
-$(document).ready(function() {
+$(document).ready(function(){
+
     $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
     $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
-});
 
+
+ $(function(){
+      $("#headerInclude").load("header.html");
+    });
+ $('.nav_links li').click(function(e) {
+    		    $(this).addClass('active').siblings().removeClass('active');
+    		});
+});
 </script>
 
 </body>

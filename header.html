@@ -63,9 +63,15 @@
 </header>
 
 <script>
-$('.nav_links li').click(function(e) {
+$(document).ready(function(){
+
+ $(function(){
+      $("#headerInclude").load("header.html");
+    });
+ $('.nav_links li').click(function(e) {
     		    $(this).addClass('active').siblings().removeClass('active');
     		});
+});
 </script>
 </body>
 </html>

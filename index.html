@@ -11,13 +11,7 @@
   <script src='bootstrap/js/bootstrap.js'></script>
   <title>IDC JR. Industrial Design</title>
   <link href="css/style.css" rel="stylesheet">
-   <script>
 
-    $(function(){
-      $("#headerInclude").load("header.html");
-    });
-	  
-  </script>
 </head>
 <body>
 <div class="main_page">
@@ -439,11 +433,19 @@
 -->
 
 <script>
+$(document).ready(function(){
 AOS.init({
   duration: 1200,
 });
- 
 
+$(function(){
+  $("#headerInclude").load("header.html");
+});
+
+ $('.nav_links li').click(function(e) {
+    		    $(this).addClass('active').siblings().removeClass('active');
+    		});
+});
 </script>
 
 </body>
