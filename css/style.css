@@ -116,9 +116,7 @@
 		font-weight: bold;
 		background-color: transparent;
 	}
-	.nav_links .active{
-/*	background-color: rgb(255, 204, 179);*/
-	}
+
 	.nav_links .active > a{
 		color: rgb(255, 153, 51) !important;
 		background-color: transparent !important;
