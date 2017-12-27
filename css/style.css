@@ -124,8 +124,4 @@
 	.nav_links .open > a, .nav_links .open > a:focus, .nav_links .open > a:hover{
 		background-color: transparent !important;
 	}
-  .menu_drop{
-	  top: 138%;
-	  left: -8%;
-	  background-color: rgba(32,32,32,0.9);
-  }
+ 

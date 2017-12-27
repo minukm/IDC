@@ -19,17 +19,19 @@
 
 <div id="headerInclude"></div>
 <section><div style="height:80px; width:100%; margin-bottom: 15px;"></div></section>
-
 <div class="container">
+
     <div class="well well-sm not_mobile">
-        <strong>Display</strong>
         <div class="btn-group">
             <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
             </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
                 class="glyphicon glyphicon-th"></span>Grid</a>
         </div>
     </div>
-    <div id="products" class="row list-group">
+	
+	<!-- -------------------------------------------------------------------------------------------------------------- -->
+	
+    <div id="products2015" class="row list-group products">
         <div class="item  col-sm-8 col-md-8 col-xs-24  col-lg-8">
             <div class="thumbnail">
                 <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
@@ -109,10 +111,115 @@
             </div>
         </div>
     </div>
+	
+	
+	<!-- ---------------------------------------------------------------------------------------------------- -->
+	  <div id="products2016" class="row list-group products">
+        <div class="item  col-sm-8 col-md-8 col-xs-24  col-lg-8">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              
+                </div>
+            </div>
+        </div>
+        <div class="item  col-sm-8 col-md-8 col-xs-24 col-lg-8">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                 
+                </div>
+            </div>
+        </div>
+        <div class="item  col-sm-8 col-md-8 col-xs-24 col-lg-8">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="item  col-sm-8 col-md-8 col-xs-24 col-lg-8">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                  
+                </div>
+            </div>
+        </div>  
+    </div>
+	<!-- ---------------------------------------------------------------------------------------------------- -->
+	
+	<!-- ---------------------------------------------------------------------------------------------------- -->
+	  <div id="products2017" class="row list-group products">
+        <div class="item  col-sm-8 col-md-8 col-xs-24  col-lg-8">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              
+                </div>
+            </div>
+        </div>
+        <div class="item  col-sm-8 col-md-8 col-xs-24 col-lg-8">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                 
+                </div>
+            </div>
+        </div>
+        <div class="item  col-sm-8 col-md-8 col-xs-24 col-lg-8">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                  
+                </div>
+            </div>
+        </div>  
+    </div>
+	<!-- ---------------------------------------------------------------------------------------------------- -->
 </div>
 </div>
 <script>
-$(document).ready(function(){
+$(document).ready(function() {
+    $('#list').click(function(event){event.preventDefault();$('.products .item').addClass('list-group-item');});
+    $('#grid').click(function(event){event.preventDefault();$('.products .item').removeClass('list-group-item');$('.products .item').addClass('grid-group-item');});
+
 
 $.get('header.html').success(function(data)
  {
