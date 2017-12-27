@@ -24,8 +24,9 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 				  <ul class="nav navbar-nav nav_links">
-					<li class="active"><a href="header.html">Home</a></li>
+					<li class=""><a href="home.html" class="">Home</a></li>
                     <li class=""><a href="index.html">Students</a></li>
+					<li class=""><a href="project.html">Project</a></li>
 					<li class="dropdown">
 					  <a class="dropdown-toggle" data-toggle="dropdown" href="">Projects <span class="caret"></span></a>
 					  <ul class="dropdown-menu menu_drop">
@@ -53,11 +54,20 @@
 
 <script>
 $(document).ready(function(){
-
- $('.nav_links li').click(function(e) {
-    		    $(this).addClass('active').siblings().removeClass('active');
-    		});
+/* alert('alert 1');
+$('.nav_links li').addClass('active');
+ $('.nav_links li').click(function(e) { 
+  alert('check');
+    		    $('.nav_links li').addClass('active').siblings().removeClass('active');
+    		}); */
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('active');
+    }
+  });
 });
+}); 
 </script>
 </body>
 </html>

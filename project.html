@@ -11,12 +11,6 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/project.css" rel="stylesheet">
   <link href="css/mobile_css.css" rel="stylesheet">
-	<script>
-	$(function(){
-	$("#headerInclude").load("header.html");
-	});
-	</script>
-
 
 </head>
 
@@ -25,6 +19,7 @@
 
 <div id="headerInclude"></div>
 <section><div style="height:80px; width:100%; margin-bottom: 15px;"></div></section>
+
 <div class="container">
     <div class="well well-sm not_mobile">
         <strong>Display</strong>
@@ -119,10 +114,16 @@
 <script>
 $(document).ready(function(){
 
-    $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
-    $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
+$.get('header.html').success(function(data)
+ {
+ //alert(data);
+      $('#headerInclude').load('header.html');
+   // alert("finished");
+ });
 
-});
+ });
+
+		
 </script>
 
 </body>

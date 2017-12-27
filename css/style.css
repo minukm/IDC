@@ -117,7 +117,7 @@
 		background-color: transparent;
 	}
 
-	.nav_links .active > a{
+	.nav_links > li > .active{
 		color: rgb(255, 153, 51) !important;
 		background-color: transparent !important;
 	}
